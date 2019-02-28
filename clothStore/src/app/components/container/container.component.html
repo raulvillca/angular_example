@@ -1,0 +1,38 @@
+<ng-container>
+    <div class="col-lg-2">
+        <div class="list-group sidebar navbar-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="nav-item row item-center">
+                <span>
+                    <i class="fas fa-fw fa-tachometer-alt nav-icon"></i>
+                </span>
+                <a (click)="createComponent('home')" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</a>
+            </div>
+            <div class="nav-item row item-center">
+                    <span>
+                        <i class="fas fa-ad nav-icon"></i>
+                    </span>
+                    <a (click)="createComponent('women')" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Mujere</a>
+                </div>
+            <div class="nav-item row item-center">
+                <span>
+                    <i class="fas fa-ad nav-icon"></i>
+                </span>
+                <a (click)="createComponent('men')" class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Hombre</a>
+            </div>
+            <div class="nav-item row item-center">
+                <span>
+                    <i class="fas fa-poll nav-icon"></i>
+                </span>
+                <a (click)="createComponent('deals')" class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Ofertas</a>
+            </div>
+            <div class="nav-item row item-center">
+                <span>
+                    <i class="fas fa-poll nav-icon"></i>
+                </span>
+                <a (click)="createComponent('contact')" class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Dirección</a>
+            </div>
+        </div>
+    </div>
+    
+    <ng-template class="col-lg-10" #appContainer></ng-template>
+</ng-container>

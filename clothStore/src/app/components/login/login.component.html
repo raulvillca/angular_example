@@ -1,0 +1,33 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Iniciar Sesion</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Usuario</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Usuario" [(ngModel)]="username" required>
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Clave</span>
+        </div>
+        <input *ngIf="! showPassword" type="password" class="form-control" aria-label="Clave" [(ngModel)]="password" required>
+        <input *ngIf="showPassword" type="text" class="form-control" aria-label="Clave" [(ngModel)]="password" required>
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" (click)="showPass()">
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Iniciar Sesion</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-light button-login" (click)="open(content)">Iniciar Sesion</button>

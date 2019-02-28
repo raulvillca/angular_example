@@ -1,0 +1,27 @@
+.sidebar {
+    background-color: #212529;
+    min-height: calc(100vh - 56px);
+}
+
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-icon {
+    font-size: 25px;
+    padding: 5px;
+    margin: 15px 25px 15px 35px;
+    align-items: center;
+    align-self: center;
+    color: white;
+}
+
+.item-center {
+    align-items: center;
+}

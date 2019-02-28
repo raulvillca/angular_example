@@ -1,0 +1,10 @@
+.login-content {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+}
+
+.button-login {
+    margin: 20px;
+}
